@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { CommonModule } from '@angular/common';
 import { FruitListMainComponent } from './fruit-list-main.component';
 
 describe('FruitListMainComponent', () => {
@@ -8,7 +8,10 @@ describe('FruitListMainComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FruitListMainComponent]
+      imports: [
+        CommonModule,
+        FruitListMainComponent,
+      ]
     })
     .compileComponents();
     
